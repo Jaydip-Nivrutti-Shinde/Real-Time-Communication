@@ -18,7 +18,7 @@ export default function Landing() {
           <h1><span style={{color:"orange"}}>Connect</span> With you loved ones</h1>
           <p>Cover a disctnace by apna video call</p>
           <div role='button'>
-            <Link to="/home">Get Started</Link>
+            <Link to="/auth">Get Started</Link>
           </div>
         </div>
         <div>

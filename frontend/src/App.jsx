@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import {Routes, BrowserRouter as Router, Route} from "react-router-dom";
 import './App.css'
+import Landing from './pages/Landing.jsx';
+import Authentication from './pages/Authentication.jsx';
+import { AuthProvider } from './contexts/authContext.jsx';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -9,10 +12,13 @@ function App() {
     <>
     <h1>Hello</h1>
       <Router>
-        <Routes>
-          {/* <Route path="/home" element={}> </Route> */}
-          <Route path="/" element={<Landing></Landing>}> </Route>
-        </Routes>
+        <AuthProvider>
+          <Routes>
+            {/* <Route path="/home" element={}> </Route> */}
+            <Route path="/" element={<Landing></Landing>}> </Route>
+            <Route path="/auth" element={<Authentication></Authentication>}> </Route>
+          </Routes>
+        </AuthProvider>
       </Router>
     </>
   )
