@@ -17,6 +17,7 @@ function App() {
             {/* <Route path="/home" element={}> </Route> */}
             <Route path="/" element={<Landing></Landing>}> </Route>
             <Route path="/auth" element={<Authentication></Authentication>}> </Route>
+            <Route path="/:url" element={<VideoMeetComponent></VideoMeetComponent>}> </Route>
           </Routes>
         </AuthProvider>
       </Router>
