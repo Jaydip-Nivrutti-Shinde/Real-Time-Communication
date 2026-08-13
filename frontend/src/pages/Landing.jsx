@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function Landing() {
+export default function LandingPage() {
+  console.log("Hello Landing");
   return (
     <div className='landingPageContainer'>
-      <nav>
+      <h2>Hello Landing</h2>
+      {/* <nav>
         <div className='navHeader'><h2>Video Call</h2></div>
         <div className='navList'>
           <p>join as guest</p>
@@ -24,7 +26,7 @@ export default function Landing() {
         <div>
           <img src="" alt="Video Call" />
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

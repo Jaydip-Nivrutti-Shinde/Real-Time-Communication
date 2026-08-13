@@ -137,9 +137,6 @@ export default function VideoMeetComponent() {
 
     }
 
-
-
-
     let getUserMediaSuccess = (stream) => {
         try {
             window.localStream.getTracks().forEach(track => track.stop())
