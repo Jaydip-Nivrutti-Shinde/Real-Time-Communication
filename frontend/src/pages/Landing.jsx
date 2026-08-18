@@ -3,14 +3,14 @@ import React from 'react'
 export default function LandingPage() {
   console.log("Hello Landing");
   return (
-    <div className='landingPageContainer'>
+    <div className='landingPageContainer' >
       <h2>Hello Landing</h2>
       {/* <nav>
         <div className='navHeader'><h2>Video Call</h2></div>
         <div className='navList'>
           <p>join as guest</p>
           <p>register</p>
-          <div role='button'>
+          <div role='button' >
             <p>Login</p>
           </div>
         </div>
