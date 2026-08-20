@@ -15,7 +15,7 @@ export default function LandingPage() {
           </div>
         </div>
       </nav>
-      <div className="landingMainContainer" >
+      <div className="landingMainContainer">
         <div>
           <h1><span style={{color:"orange"}}>Connect</span> With you loved ones</h1>
           <p>Cover a disctnace by apna video call</p>
